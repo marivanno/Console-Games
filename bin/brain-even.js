@@ -37,7 +37,7 @@ function braineven() {
       }
     } else return console.log(`${answer} is wrong answer ;(. Answer "yes" if the number is even, otherwise answer "no"..\n Let's try again, ${name}`);
   }
-  return true;
+  return NaN;
 }
 
 braineven();
