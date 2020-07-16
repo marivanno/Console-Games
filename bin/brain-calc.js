@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
 function braincalc() {
@@ -13,6 +14,7 @@ function braincalc() {
     const a = Math.floor(Math.random() * 100);
     const b = Math.floor(Math.random() * 100);
     const result = `${a} ${rch} ${b}`;
+    // eslint-disable-next-line no-eval
     const result2 = eval(result);
     console.log(`Question: ${result}`);
     const answer = readlineSync.question('Enter you answer please: ');

@@ -4,5 +4,5 @@ run:
 	node bin/brain-even.js
 publish: 
 	npm publish --dry-run
-make lint: 
+lint: 
 	npx eslint .

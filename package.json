@@ -5,7 +5,12 @@
   "main": "main.js",
   "type": "module",
   "bin": {
-    "brain-even": "./bin/brain-even.js"
+    "brain-even": "./bin/brain-even.js",
+    "brain-calc": "./bin/brain-calc.js",
+    "brain-games": "./bin/brain-games.js",
+    "brain-gcd": "./bin/brain-gcd.js",
+    "brain-progression": "./bin/brain-progression.js"
+
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +24,7 @@
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^23.18.0"
+    "eslint-plugin-jest": "^23.18.0",
+    "readline-sync": "^1.4.10"
   }
 }

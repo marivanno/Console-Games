@@ -1,8 +1,9 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
 function NOD(x, y) {
   if (y > x) return NOD(y, x);
-  if (!y) return x;
+  if (y === 0) return x;
   return NOD(y, x % y);
 }
 
