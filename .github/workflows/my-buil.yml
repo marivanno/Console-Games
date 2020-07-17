@@ -19,7 +19,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: stefanoeb/eslint-action@1.0.2
+      - uses: actions/checkout@v1
       - name: Run linter
         run: |
           make install
