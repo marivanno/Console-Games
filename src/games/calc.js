@@ -1,10 +1,13 @@
 import startGame from '../index.js';
 
 const calc = () => {
+  // Create an array with operation signs
   const peterArr = ['+', '-', '*'];
   const rch = peterArr[Math.floor(Math.random() * 3)];
+  // Generate random number
   const a = Math.floor(Math.random() * 100);
   const b = Math.floor(Math.random() * 100);
+  // Assign constants result question and description
   const result2 = `${a} ${rch} ${b}`;
   // eslint-disable-next-line no-eval
   const result = String(eval(result2));
