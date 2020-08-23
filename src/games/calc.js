@@ -1,12 +1,13 @@
 import startGame from '../index.js';
+import randomNumber from '../random-generator.js';
 
 const calc = () => {
   // Create an array with operation signs
   const peterArr = ['+', '-', '*'];
   const rch = peterArr[Math.floor(Math.random() * 3)];
   // Generate random number
-  const a = Math.floor(Math.random() * 100);
-  const b = Math.floor(Math.random() * 100);
+  const a = randomNumber(100);
+  const b = randomNumber(100);
   // Assign constants result question and description
   const result2 = `${a} ${rch} ${b}`;
   // eslint-disable-next-line no-eval
@@ -16,5 +17,4 @@ const calc = () => {
   return [result, description, questions];
 };
 
-const newRun = () => startGame(calc);
-export default newRun;
+export default () => startGame(calc);

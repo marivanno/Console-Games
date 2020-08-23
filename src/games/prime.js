@@ -1,4 +1,5 @@
 import startGame from '../index.js';
+import randomNumber from '../random-generator.js';
 
 const prime = () => {
 //  Simplicity test
@@ -14,7 +15,7 @@ const prime = () => {
     return true;
   };
   // Generate random number
-  const number = Math.floor(Math.random() * 1000);
+  const number = randomNumber(1000);
   // Assign constants result question and description
   const result = chekPrime(number) ? 'yes' : 'no';
   const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -22,6 +23,4 @@ const prime = () => {
   return [result, description, questions];
 };
 
-const newRun = () => startGame(prime);
-
-export default newRun;
+export default () => startGame(prime);
