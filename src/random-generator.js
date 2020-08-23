@@ -13,6 +13,4 @@ export const generaterArray = () => {
   }
   return [arr, arr[b] + 2];
 };
-
 export default randomNumber;
-
