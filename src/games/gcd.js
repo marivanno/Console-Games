@@ -7,7 +7,7 @@ const gcd = () => {
     if (y > x) return NOD(y, x);
     if (y === 0) return x;
     return NOD(y, x % y);
-  }
+  };
   // Generate random number
   const a = randomNumber(25);
   const b = randomNumber(75);
