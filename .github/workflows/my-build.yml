@@ -23,6 +23,6 @@ jobs:
       - name: Run linter
         run: |
           sudo apt update
-          # sudo apt install nodejs
+          sudo apt install nodejs
           sudo apt install npm
           npx eslint .
