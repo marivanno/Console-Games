@@ -19,5 +19,5 @@ run prime:
 publish: 
 	npm publish --dry-run
 	
-run lint: 
+lint: 
 	npx eslint .
