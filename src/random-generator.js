@@ -18,4 +18,5 @@ const generateArrayProgression = (sizeProgression) => {
   return [arr, arr[hiddenNumber] + 2];
 };
 
-export { generateArrayProgression, generateRandomNumber }
+export { generateArrayProgression, generateRandomNumber };
+
