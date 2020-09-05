@@ -13,8 +13,8 @@ const chekPrimeNumber = (num) => {
   return true;
 };
 
-// game logic brain-prime.js
-const playPrimeNumber = () => {
+// game logic brain-prime.js, see index.js
+const generateLogicPrimeNumber = () => {
   const number = generateRandomNumber(1, 500);
   const result = chekPrimeNumber(number) ? 'yes' : 'no';
   const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -22,4 +22,4 @@ const playPrimeNumber = () => {
   return [result, description, questions];
 };
 
-export default () => startGame(playPrimeNumber);
+export default () => startGame(generateLogicPrimeNumber);

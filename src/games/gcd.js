@@ -7,8 +7,8 @@ const FindingGreatestCommonDivisor = (x, y) => {
   return FindingGreatestCommonDivisor(y, x % y);
 };
 
-// game logic brain-gcd.js
-const playGreatestCommonDivisor = () => {
+// game logic brain-gcd.js, see index.js
+const generateLogicGreatestCommonDivisor = () => {
   const a = generateRandomNumber(1, 25);
   const b = generateRandomNumber(1, 75);
   const result = String(FindingGreatestCommonDivisor(a, b));
@@ -17,4 +17,4 @@ const playGreatestCommonDivisor = () => {
   return [result, description, questions];
 };
 
-export default () => startGame(playGreatestCommonDivisor);
+export default () => startGame(generateLogicGreatestCommonDivisor);

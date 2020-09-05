@@ -1,8 +1,8 @@
 import startGame from '../index.js';
 import { generateRandomNumber } from '../random-generator.js';
 
-// game logic brain-calc.js
-const playComputeValue = () => {
+// game logic brain-calc.js, see index.js
+const generateLogicBrainCalcGame = () => {
   const peterArr = ['+', '-', '*'];
   const rch = peterArr[Math.floor(Math.random() * 3)];
   const a = generateRandomNumber(2, 10);
@@ -15,4 +15,4 @@ const playComputeValue = () => {
   return [result, description, questions];
 };
 
-export default () => startGame(playComputeValue);
+export default () => startGame(generateLogicBrainCalcGame);
