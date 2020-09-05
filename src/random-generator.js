@@ -19,4 +19,3 @@ const generateArrayProgression = (sizeProgression) => {
 };
 
 export { generateArrayProgression, generateRandomNumber };
-
