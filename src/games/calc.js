@@ -8,7 +8,7 @@ const calculateResult = (operator, x, y) => {
   if (operator === '+') {
     return x + y;
   }
-  if (operator === '*') {
+  else (operator === '*') {
     return x * y;
   }
 };

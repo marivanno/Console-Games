@@ -22,4 +22,3 @@ export const generateRandomOperator = (arr) => {
   const arrWithOperators = [...arr];
   return arrWithOperators[generateRandomNumber(0, 2)];
 };
-
