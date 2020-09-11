@@ -1,7 +1,7 @@
 import startGame from '../index.js';
-import { generateRandomNumber } from '../random-generator.js';
+import { generateRandomNumber } from '../randomGenerator.js';
 
-const chekPrimeNumber = (num) => {
+const isChekPrimeNumber = (num) => {
   if (num < 2) {
     return false;
   }
@@ -14,12 +14,12 @@ const chekPrimeNumber = (num) => {
 };
 
 // game logic brain-prime.js, see index.js
-const generateLogicPrimeNumber = () => {
+const getGameData = () => {
   const number = generateRandomNumber(1, 500);
-  const result = chekPrimeNumber(number) ? 'yes' : 'no';
+  const result = isChekPrimeNumber(number) ? 'yes' : 'no';
   const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const questions = `Questions: ${number}`;
-  return [result, description, questions];
+  const question = `Questions: ${number}`;
+  return [result, description, question];
 };
 
-export default () => startGame(generateLogicPrimeNumber);
+export default () => startGame(getGameData);

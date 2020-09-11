@@ -1,9 +1,9 @@
-const generateRandomNumber = (min, max) => {
+export const generateRandomNumber = (min, max) => {
   const result = min + Math.random() * (max + 1 - min);
   return Math.floor(result);
 };
 
-const generateArrayProgression = (sizeProgression) => {
+export const generateArrayProgression = (sizeProgression) => {
   let a = generateRandomNumber(1, 15);
   const hiddenNumber = generateRandomNumber(1, 15);
   const arr = [];
@@ -18,4 +18,8 @@ const generateArrayProgression = (sizeProgression) => {
   return [arr, arr[hiddenNumber] + 2];
 };
 
-export { generateArrayProgression, generateRandomNumber };
+export const generateRandomOperator = (arr) => {
+  const arrWithOperators = [...arr];
+  return arrWithOperators[generateRandomNumber(0, 2)];
+};
+
