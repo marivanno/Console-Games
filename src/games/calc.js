@@ -7,10 +7,7 @@ const calculateResult = (operator, x, y) => {
   }
   if (operator === '+') {
     return x + y;
-  }
-  else (operator === '*') {
-    return x * y;
-  }
+  } return x * y;
 };
 
 // game logic brain-calc.js, see index.js
