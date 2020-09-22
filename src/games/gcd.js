@@ -1,5 +1,5 @@
 import startGame from '../index.js';
-import { generateRandomNumber } from '../randomGenerator.js';
+import generateRandomNumber from '../randomGenerator.js';
 
 const findGcd = (x, y) => {
   if (y === 0) return x;

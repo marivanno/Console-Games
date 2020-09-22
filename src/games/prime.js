@@ -1,5 +1,5 @@
 import startGame from '../index.js';
-import { generateRandomNumber } from '../randomGenerator.js';
+import generateRandomNumber from '../randomGenerator.js';
 
 const isChekPrimeNumber = (num) => {
   if (num < 2) {

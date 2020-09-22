@@ -1,5 +1,5 @@
 import startGame from '../index.js';
-import { generateRandomNumber, generateRandomOperator } from '../randomGenerator.js';
+import generateRandomNumber from '../randomGenerator.js';
 
 const calculateResult = (operator, x, y) => {
   if (operator === '-') {
@@ -8,6 +8,11 @@ const calculateResult = (operator, x, y) => {
   if (operator === '+') {
     return x + y;
   } return x * y;
+};
+
+export const generateRandomOperator = (arr) => {
+  const arrWithOperators = [...arr];
+  return arrWithOperators[generateRandomNumber(0, 2)];
 };
 
 // game logic brain-calc.js, see index.js

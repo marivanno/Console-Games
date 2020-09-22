@@ -4,7 +4,7 @@ const startGame = (gameData) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  for (let i = 0; i < 3; i += 1) {
+  for (let countOfRound = 0; countOfRound < 3; countOfRound += 1) {
     const [result, description, question] = gameData();
     console.log(description, question);
     const answer = readlineSync.question('Enter you answer please: ');
