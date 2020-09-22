@@ -14,7 +14,7 @@ const startGame = (gameData) => {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${result}.\n Let's try again, ${name}`);
       break;
     }
-    if (i === 2) {
+    if (countOfRound === 2) {
       console.log(`Congratulations, ${name}`);
     }
   }
