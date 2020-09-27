@@ -8,7 +8,7 @@ const findGcd = (x, y) => {
 };
 
 // game logic brain-gcd.js, see index.js
-const getGameData = () => {
+const getDataGameRound = () => {
   const a = generateRandomNumber(1, 25);
   const b = generateRandomNumber(1, 75);
   const result = String(findGcd(a, b));
@@ -17,4 +17,4 @@ const getGameData = () => {
   return [result, description, question];
 };
 
-export default () => startGame(getGameData);
+export default () => startGame(getDataGameRound);

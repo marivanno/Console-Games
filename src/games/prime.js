@@ -14,7 +14,7 @@ const isChekPrimeNumber = (num) => {
 };
 
 // game logic brain-prime.js, see index.js
-const getGameData = () => {
+const getDataGameRound = () => {
   const number = generateRandomNumber(1, 500);
   const result = isChekPrimeNumber(number) ? 'yes' : 'no';
   const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -22,4 +22,4 @@ const getGameData = () => {
   return [result, description, question];
 };
 
-export default () => startGame(getGameData);
+export default () => startGame(getDataGameRound);

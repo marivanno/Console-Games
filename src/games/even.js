@@ -2,7 +2,7 @@ import startGame from '../index.js';
 import generateRandomNumber from '../randomGenerator.js';
 
 // game logic brain-even.js, see index.js
-const getGameData = () => {
+const getDataGameRound = () => {
   const number = generateRandomNumber(1, 1000);
   const result = number % 2 === 0 ? 'yes' : 'no';
   const description = 'What is the result of the expression?';
@@ -10,4 +10,4 @@ const getGameData = () => {
   return [result, description, question];
 };
 
-export default () => startGame(getGameData);
+export default () => startGame(getDataGameRound);

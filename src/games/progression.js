@@ -1,7 +1,7 @@
 import startGame from '../index.js';
 import generateRandomNumber from '../randomGenerator.js';
 
-const generateArrayAndHiddenNuberForProgression = (sizeProgression) => {
+const generateArrayAndHiddenNumberForProgression = (sizeProgression) => {
   let a = generateRandomNumber(1, 15);
   const hiddenNumber = generateRandomNumber(1, 15);
   const arr = [];
@@ -17,11 +17,11 @@ const generateArrayAndHiddenNuberForProgression = (sizeProgression) => {
 };
 
 // game logic brain-progression.js, see index.js
-const getGameData = () => {
+const getDataGameRound = () => {
   const description = 'What number is missing in the progression?';
-  const [arr, answer] = generateArrayAndHiddenNuberForProgression(15);
+  const [arr, answer] = generateArrayAndHiddenNumberForProgression(15);
   const question = arr.join(', ');
   const result = String(answer);
   return [result, description, question];
 };
-export default () => startGame(getGameData);
+export default () => startGame(getDataGameRound);
