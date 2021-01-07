@@ -6,7 +6,8 @@ const startGame = (roundData) => {
   console.log(`Hello, ${name}!`);
   for (let countOfRound = 0; countOfRound < 3; countOfRound += 1) {
     const [result, description, question] = roundData();
-    console.log(description, question);
+    console.log(description);
+    console.log(question);
     const answer = readlineSync.question('Enter you answer please: ');
     if (result === answer) {
       console.log('Correct!');
