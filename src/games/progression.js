@@ -8,7 +8,7 @@ const generateArrayAndHiddenNumberForProgression = (sizeProgression) => {
   for (let i = 0; i < sizeProgression; i += 1) {
     arr.push(a);
     if (arr[i] === arr[hiddenNumber]) {
-      arr.push('*');
+      arr.push('..');
       a += 2;
     }
     a += 2;
