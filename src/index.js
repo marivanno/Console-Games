@@ -15,7 +15,7 @@ const startGame = (roundData) => {
       break;
     }
     if (countOfRound === 2) {
-      console.log(`Congratulations, ${name}`);
+      console.log(`Congratulations, ${name}!`);
     }
   }
 };
