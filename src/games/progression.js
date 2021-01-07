@@ -3,7 +3,7 @@ import generateRandomNumber from '../randomGenerator.js';
 
 const generateArrayAndHiddenNumberForProgression = (sizeProgression) => {
   let a = generateRandomNumber(1, 9);
-  const hiddenNumber = generateRandomNumber(1, 9);
+  const hiddenNumber = generateRandomNumber(1, 8);
   const arr = [];
   for (let i = 0; i < sizeProgression; i += 1) {
     arr.push(a);
