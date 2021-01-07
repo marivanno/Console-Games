@@ -20,8 +20,8 @@ const generateArrayAndHiddenNumberForProgression = (sizeProgression) => {
 const getDataGameRound = () => {
   const description = 'What number is missing in the progression?';
   const [arr, answer] = generateArrayAndHiddenNumberForProgression(15);
-  const question = arr.join(', ');
-  const result = String(answer);
+  const question = `Question: ${arr.join(', ')} ?`;
+  const result = String(answer); 
   return [result, description, question];
 };
 export default () => startGame(getDataGameRound);
