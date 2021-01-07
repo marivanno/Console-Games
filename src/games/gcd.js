@@ -13,7 +13,7 @@ const getDataGameRound = () => {
   const b = generateRandomNumber(1, 75);
   const result = String(findGcd(a, b));
   const description = 'Find the greatest common divisor of given numbers.';
-  const question = `Questions: ${a} ${b}`;
+  const question = `Questions: ${a} ${b} ?`;
   return [result, description, question];
 };
 
